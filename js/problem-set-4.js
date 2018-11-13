@@ -4,7 +4,8 @@
 
 function hello() {
 
-  // WRITE YOUR EXERCISE 1 CODE HERE
+var div=document.getElementById("output1");
+div.innerHTML="Hello, AP Computer Science Principles!"
 
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -24,7 +25,10 @@ function helloAgain() {
   // Use the name variable declared above to store the user's response. You
   // do not need to re-declare it, only assign it a value.
 
-  // WRITE YOUR EXERCISE 2 CODE HERE
+  var op2 = document.getElementById("output2");
+  var stranger = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  op2.textContent = "Hello, " + myName;
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
