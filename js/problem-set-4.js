@@ -26,9 +26,8 @@ function helloAgain() {
   // do not need to re-declare it, only assign it a value.
 
   var op2 = document.getElementById("output2");
-  var stranger = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
-  op2.textContent = "Hello, " + myName;
+  name = prompt('Please enter your name.');
+  op2.innerHTML = ("Hello, " + name + "!")
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -48,7 +47,7 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 3 CODE HERE
+
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
