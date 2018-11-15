@@ -69,7 +69,9 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 4 CODE HERE
+  var op4 = document.getElementById("output4");
+  ces = ((fahr - 32)/ 1.8).toFixed(2);
+  op4.innerHTML = (fahr + " degrees Fahrenheit equals " + ces + " degrees Celsius.")
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
@@ -93,7 +95,13 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 5 CODE HERE
+  let br = "</br>";
+    let mile = Math.floor(inches/ 63360);
+    let yard = Math.floor(inches % 63360 / 36);
+    let feet = Math.floor(inches % 63360 % 36 / 12);
+    let inch = Math.floor(inches % 63360 % 12);
+    var op5 = document.getElementById("output5");
+    op5.innerHTML = (`Mile: ${mile}${br} Yard: ${yard}${br} Feet: ${feet}${br} Inches: ${inch}`);
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
