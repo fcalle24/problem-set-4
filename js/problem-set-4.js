@@ -214,8 +214,14 @@ function money() {
   let pennies = input; // DO NOT MODIFY
   /////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 9 CODE HERE
-
+  let br = "</br>";
+    let dollar = Math.floor(pennies / 100);
+    let quarter = Math.floor(pennies % 100 / 25);
+    let dime = Math.floor(pennies % 100 % 25 / 10);
+    let nickel = Math.floor(pennies % 100 % 25 % 10 / 5);
+    let penny = Math.floor(pennies % 100 % 25 % 10 % 5);
+    var op9 = document.getElementById("output9");
+    op9.innerHTML = (`Dollars: ${dollar}${br}Quarters: ${quarter}${br}Dimes: ${dime}${br}Nickels: ${nickel}${br}Pennies: ${penny}`);
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
   ///////////////////////// DO NOT MODIFY
