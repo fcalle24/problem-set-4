@@ -154,7 +154,14 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 7 CODE HERE
+  let br = "</br>";
+    let gallon = Math.floor(fluidOunces / 128);
+    let quart = Math.floor(fluidOunces % 128 / 32);
+    let pint = Math.floor(fluidOunces % 128 % 32 / 16);
+    let cup = Math.floor(fluidOunces % 128 % 32 % 16 / 8);
+    let fluidOunce = Math.floor(fluidOunces % 128 % 32 % 16 % 8);
+    var op7 = document.getElementById("output7");
+    op7.innerHTML = (`Gallons: ${gallon}${br}Quarts: ${quart}${br}Pints: ${pint}${br}Cups: ${cup}${br}Fluid Ounces: ${fluidOunce}`);
 
   /////////////////////////////// DO NOT MODIFY
   check("fluidOunces", input); // DO NOT MODIFY
