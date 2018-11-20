@@ -244,7 +244,8 @@ function change() {
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 10 CODE HERE
+  var op10 = document.getElementById("output10");
+  op10.innerHTML = ("coins.");
 
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
